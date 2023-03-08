@@ -1,0 +1,371 @@
+const countries = [
+  {
+    id: 1,
+    countries: "Indonesia",
+    img: "http://dummyimage.com/203x100.png/dddddd/000000",
+    voyages: [],
+  },
+  {
+    id: 2,
+    countries: "China",
+    img: "http://dummyimage.com/125x100.png/5fa2dd/ffffff",
+    voyages: [],
+  },
+  {
+    id: 3,
+    countries: "Indonesia",
+    img: "http://dummyimage.com/219x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Aleg",
+        desc: "Poisoning by unspecified narcotics, undetermined, sequela",
+        tendance: false,
+        selected: false,
+        id: 1,
+      },
+      {
+        name: "Mekarsari",
+        desc: "Onycholysis",
+        tendance: true,
+        selected: true,
+        id: 2,
+      },
+    ],
+  },
+  {
+    id: 4,
+    countries: "China",
+    img: "http://dummyimage.com/132x100.png/ff4444/ffffff",
+    voyages: [
+      {
+        name: "Zhuxi",
+        desc: "Unsp comp of fb acc left in body fol heart cath, sequela",
+        tendance: false,
+        selected: false,
+        id: 1,
+      },
+    ],
+  },
+  {
+    id: 5,
+    countries: "France",
+    img: "http://dummyimage.com/200x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Ennery",
+        desc: "Poisoning by penicillins, assault, sequela",
+        tendance: true,
+        selected: true,
+        id: 1,
+      },
+    ],
+  },
+  {
+    id: 6,
+    countries: "Philippines",
+    img: "http://dummyimage.com/201x100.png/5fa2dd/ffffff",
+    voyages: [
+      {
+        name: "Sośnicowice",
+        desc: "Adverse effect of antimycobacterial drugs, subs encntr",
+        tendance: false,
+        selected: true,
+        id: 1,
+      },
+      {
+        name: "Chapultepec",
+        desc: "Athscl nonbiol bypass of the right leg w ulcer oth prt foot",
+        tendance: false,
+        selected: false,
+        id: 2,
+      },
+    ],
+  },
+  {
+    id: 7,
+    countries: "China",
+    img: "http://dummyimage.com/209x100.png/ff4444/ffffff",
+    voyages: [
+      {
+        name: "Krandil",
+        desc: "Burn of second degree of male genital region, subs encntr",
+        tendance: false,
+        selected: false,
+        id: 1,
+      },
+      {
+        name: "Xiwei",
+        desc: "Vitamin A deficiency with keratomalacia",
+        tendance: false,
+        selected: false,
+        id: 2,
+      },
+    ],
+  },
+  {
+    id: 8,
+    countries: "China",
+    img: "http://dummyimage.com/231x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Andalucía",
+        desc: "Oth fracture of right femur, init for opn fx type 3A/B/C",
+        tendance: true,
+        selected: false,
+        id: 1,
+      },
+    ],
+  },
+  {
+    id: 9,
+    countries: "Mexico",
+    img: "http://dummyimage.com/111x100.png/5fa2dd/ffffff",
+    voyages: [
+      {
+        name: "Luodong",
+        desc: "Obstructed labor due to breech presentation, fetus 1",
+        tendance: true,
+        selected: false,
+        id: 1,
+      },
+      {
+        name: "Surin",
+        desc: "Fibrous dysplasia (monostotic), left hand",
+        tendance: true,
+        selected: true,
+        id: 2,
+      },
+      {
+        name: "Kumanovo",
+        desc: "Oth traum displ spondylolysis of 2nd cervcal vert, 7thD",
+        tendance: false,
+        selected: false,
+        id: 3,
+      },
+    ],
+  },
+  {
+    id: 10,
+    countries: "Indonesia",
+    img: "http://dummyimage.com/173x100.png/dddddd/000000",
+    voyages: [],
+  },
+  {
+    id: 11,
+    countries: "American Samoa",
+    img: "http://dummyimage.com/169x100.png/cc0000/ffffff",
+    voyages: [],
+  },
+  {
+    id: 12,
+    countries: "New Caledonia",
+    img: "http://dummyimage.com/183x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Néo Psychikó",
+        desc: "Blister (nonthermal) of right back wall of thorax, sequela",
+        tendance: true,
+        selected: true,
+        id: 1,
+      },
+    ],
+  },
+  {
+    id: 13,
+    countries: "Brazil",
+    img: "http://dummyimage.com/250x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Saint Helier",
+        desc: "Pasngr on bus injured in clsn w statnry object nontraf, subs",
+        tendance: true,
+        selected: false,
+        id: 1,
+      },
+      {
+        name: "Gammad",
+        desc: "Displaced fracture of lateral end of left clavicle, sequela",
+        tendance: false,
+        selected: false,
+        id: 2,
+      },
+    ],
+  },
+  {
+    id: 14,
+    countries: "Mongolia",
+    img: "http://dummyimage.com/237x100.png/ff4444/ffffff",
+    voyages: [
+      {
+        name: "Tiedonglu",
+        desc: "Legal intervnt involving oth explosv, bystand injured, subs",
+        tendance: true,
+        selected: false,
+        id: 1,
+      },
+      {
+        name: "Tallaght",
+        desc: "Athscl nonaut bio bypass of left leg w ulcer of unsp site",
+        tendance: true,
+        selected: false,
+        id: 2,
+      },
+      {
+        name: "Nkongsamba",
+        desc: "Poisoning by oral contraceptives, self-harm, subs",
+        tendance: false,
+        selected: false,
+        id: 3,
+      },
+      {
+        name: "Detroit",
+        desc: "Occupant of pk-up/van injured in collision w pedal cycle",
+        tendance: false,
+        selected: false,
+        id: 4,
+      },
+    ],
+  },
+  {
+    id: 15,
+    countries: "Bosnia and Herzegovina",
+    img: "http://dummyimage.com/118x100.png/dddddd/000000",
+    voyages: [
+      {
+        name: "Rydułtowy",
+        desc: "Nondisp transverse fx shaft of r tibia, 7thG",
+        tendance: false,
+        selected: true,
+        id: 1,
+      },
+      {
+        name: "Sułkowice",
+        desc: "Kissing spine, lumbosacral region",
+        tendance: false,
+        selected: false,
+        id: 2,
+      },
+      {
+        name: "Arai",
+        desc: "Systolic (congestive) heart failure",
+        tendance: false,
+        selected: true,
+        id: 3,
+      },
+    ],
+  },
+  {
+    id: 16,
+    countries: "China",
+    img: "http://dummyimage.com/198x100.png/ff4444/ffffff",
+    voyages: [
+      {
+        name: "Paris 10",
+        desc: "Contusion of left ankle, subsequent encounter",
+        tendance: false,
+        selected: true,
+        id: 1,
+      },
+      {
+        name: "Krian",
+        desc: "Disorder of central nervous system, unspecified",
+        tendance: false,
+        selected: true,
+        id: 2,
+      },
+      {
+        name: "Charlemagne",
+        desc: "Other superficial bite of right upper arm",
+        tendance: true,
+        selected: false,
+        id: 3,
+      },
+    ],
+  },
+  {
+    id: 17,
+    countries: "China",
+    img: "http://dummyimage.com/119x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Obodivka",
+        desc: "Path fx in neopltc dis, unsp site, subs for fx w delay heal",
+        tendance: false,
+        selected: true,
+        id: 1,
+      },
+      {
+        name: "Borås",
+        desc: "Type 1 diabetes w mild nonproliferative diabetic retinopathy",
+        tendance: true,
+        selected: false,
+        id: 2,
+      },
+    ],
+  },
+  {
+    id: 18,
+    countries: "United States",
+    img: "http://dummyimage.com/128x100.png/ff4444/ffffff",
+    voyages: [
+      {
+        name: "Jingjiao",
+        desc: "Contusion of unspecified upper arm, initial encounter",
+        tendance: true,
+        selected: true,
+        id: 1,
+      },
+    ],
+  },
+  {
+    id: 19,
+    countries: "Greece",
+    img: "http://dummyimage.com/120x100.png/5fa2dd/ffffff",
+    voyages: [
+      {
+        name: "Bangeran",
+        desc: "Oth disorders of bone dev and growth, tibia and fibula",
+        tendance: false,
+        selected: true,
+        id: 1,
+      },
+    ],
+  },
+  {
+    id: 20,
+    countries: "Slovenia",
+    img: "http://dummyimage.com/173x100.png/cc0000/ffffff",
+    voyages: [
+      {
+        name: "Pittsburgh",
+        desc: "Phlebitis and thombophlb of unsp deep vessels of low extrm",
+        tendance: true,
+        selected: true,
+        id: 1,
+      },
+      {
+        name: "Dapdap",
+        desc: "Partial traumatic amputation at level between knee and ankle",
+        tendance: true,
+        selected: false,
+        id: 2,
+      },
+      {
+        name: "Gedian",
+        desc: "Epiphora due to excess lacrimation, right lacrimal gland",
+        tendance: false,
+        selected: true,
+        id: 3,
+      },
+      {
+        name: "Dobřany",
+        desc: "Chronic embolism and thrombosis of left tibial vein",
+        tendance: false,
+        selected: false,
+        id: 4,
+      },
+    ],
+  },
+];
+
+export default countries;

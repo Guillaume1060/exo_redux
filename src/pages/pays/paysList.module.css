@@ -1,0 +1,30 @@
+
+.ctn {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    color: rgb(67, 64, 64);
+    width: auto;
+    margin: 0.3rem;
+    padding: .3rem;
+    background-color: #78d5d7
+}
+
+.favorite {
+    margin-left: 0;
+}
+
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.li {
+    list-style-type: none;
+    display: flex;
+;
+}

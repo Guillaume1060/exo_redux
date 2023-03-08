@@ -1,0 +1,29 @@
+
+
+.links {
+    margin: 0;
+    background-color: #78d5d7;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.title {
+    color : #f7f9f9;
+    margin-left: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.link {
+    font-size: 1.3rem;
+    color: #f7f9f9;
+    text-decoration: none;
+    align-self: center;
+    margin-right: 1rem;
+}
