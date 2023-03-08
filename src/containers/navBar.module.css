@@ -1,17 +1,25 @@
-
+.home {
+    text-decoration: none;
+}
 
 .links {
+    padding: 1.2rem;
     margin: 0;
     background-color: #78d5d7;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     margin-right: 1rem;
+    clip-path: polygon(0 0, 100% 1%, 100% 71%, 0 90%);
 }
 
 .title {
-    color : #f7f9f9;
-    margin-left: 0.5rem;
+    color : #080808;
+    font-size: 2.3rem;
+    font-family: 'Tilt Neon', cursive;
+    text-decoration: none;
+
+    
 }
 
 .nav {
@@ -21,9 +29,10 @@
 }
 
 .link {
-    font-size: 1.3rem;
-    color: #f7f9f9;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2rem;
+    color: #1f2020;
     text-decoration: none;
     align-self: center;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }

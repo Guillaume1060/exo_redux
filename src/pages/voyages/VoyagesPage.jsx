@@ -2,7 +2,7 @@ import classes from './voyagePage.module.css'
 import { useSelector } from 'react-redux'
 
 
-TODO
+
 // Non fonctionnel
 const VoyagesPage = () => {
     const countries = useSelector(state=>state.voyages.data)

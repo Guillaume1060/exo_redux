@@ -1,18 +1,25 @@
 
 .page {
-    background-color: #f7f9f9;
+    display: flex;
 }
 
 .title {
     text-align: center;
+    font-family: 'Tilt Neon', cursive;
 }
 .ctn {
     
     margin: 0 2rem;
-    /* background-image: url(/exo_redux/src/photos/logo.jpg); */
+    
+}
+
+.img {
+    margin-top: 0.1rem;
+    border-radius: 50%;
 }
 
 .para {
+    font-family: 'Tilt Neon', cursive;
     font-size: 2rem;
     text-align: center;
 }

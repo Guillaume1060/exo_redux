@@ -16,23 +16,21 @@ const PaysList = () => {
         <ul>
         {countries.map(country=>(
             <div  className={classes.ctn}>
-            <ul className={classes.card} >
-
-                <li key={country.id} onClick={toggleDisplay} >
-                {country.countries} ({country.voyages.length} trip(s) available)
-                </li>
-                
-            {displayDetail && (
-            <div>
-                <p>City visited : {country.voyages.map(city=>`${city.name},`)}</p>
-                <p>Descrption : {country.voyages.map(city=>`${city.desc},`)}</p>
-                
+                <ul className={classes.card} >
+                    <div>
+                        <li key={country.id} onClick={toggleDisplay}>
+                        {country.countries} ({country.voyages.length>0 ? `${country.voyages.length} trip(s) available`: 'coming soon'})
+                        </li>
+                    {displayDetail && (
+                        <div>
+                            {/* ({country.voyages.length>0 ? {country.voyages.map(city=> `${city.name},`)} : 'coming soon'}) */}
+                            <p>City visited : {country.voyages.map(city=> `${city.name},`)}</p>
+                            <p>Descrption : {country.voyages.map(city=>`${city.desc},`)}</p>
+                        </div>
+                    )}
+                    </div>
+                </ul>
             </div>
-            )}
-            </ul>
-
-            </div>
-            
             ))}
         </ul>
     )
