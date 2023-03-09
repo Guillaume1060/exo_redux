@@ -9,7 +9,8 @@ const NavBar = () => {
         <div className={classes.nav}>
             <NavLink className={classes.link} to={"/pays"}>Countries</NavLink>
             <NavLink className={classes.link} to={"/voyages"}>Our travels</NavLink>
-            <NavLink className={classes.link} to={"/"}>Your travel(s)</NavLink>
+            <NavLink className={classes.link} to={"/myTravel"}>Your travel(s)</NavLink>
+            <NavLink className={classes.admin} to={"/admin"}>Admin</NavLink>
         </div>
         </div>
         

@@ -1,18 +1,13 @@
-.title {
-    font-family: 'Tilt Neon', cursive;
-    text-align: left;
-    margin-left: 2rem;
-}
-
 .card {
     font-family: 'Tilt Neon', cursive;
     font-size: 1.3rem;
     display: flex;
     list-style-type: none;
-    flex-direction: row;
+    flex-direction: column;
     color: rgb(67, 64, 64);
-    width: 40%;
+    width: auto;
     margin: 0.3rem;
     padding: .3rem;
-    background-color: rgba(120, 213, 215,0.3)
+    background-color: rgba(120, 213, 215,0.3);
+    text-decoration: none;
 }

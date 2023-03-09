@@ -36,3 +36,12 @@
     align-self: center;
     margin-right: 2rem;
 }
+
+.admin {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2rem;
+    color: #4428e0;
+    text-decoration: none;
+    align-self: center;
+    margin-right: 2rem;
+}

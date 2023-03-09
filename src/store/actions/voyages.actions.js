@@ -7,3 +7,5 @@ import { createAction } from "@reduxjs/toolkit";
 // });
 
 export const deleteVoyage = createAction("voyages/deleteVoyage");
+
+export const saveVoyage = createAction("voyages/saveVoyage");

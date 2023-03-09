@@ -1,7 +1,7 @@
-import classes from './voyagePage.module.css'
-import { useSelector } from 'react-redux'
+import { useSelector } from "react-redux";
+import classes from './myTravel.module.css'
 
-const VoyagesPage = () => {
+const MyTravel = () => {
     const countries = useSelector(state=>state.voyages.data)
     function getTrips (arr) {
         let trips = [];
@@ -12,18 +12,21 @@ const VoyagesPage = () => {
     }
 
     const trip = getTrips(countries).flat()
-    const tripTendency = trip.filter(trip=>trip.tendance === true)
+    const tripTendency = trip.filter(trip=>trip.selected === true)
 
     return (
         <>
-        <h1 className={classes.title} >OUR TENDENCY TRIP 😎</h1>
+        <h1 className={classes.title}>YOUR TRIPS PLANNED</h1>
         <ul>
         {tripTendency.map(trip=>(
-            <p className={classes.card} >{trip.name} ({trip.desc}) {trip.selected && '✔'}</p>
-        ))}
+            <p className={classes.card} >{trip.name} ({trip.desc})</p>
+            
+            ))}
         </ul>
             </>
     )
 }
 
-export default VoyagesPage
+
+
+export default MyTravel
